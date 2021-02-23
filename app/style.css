@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: Sen;
+}
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.blue {
+    color: #3D72ED;
+}
+.black {
+    color:#2F2F2F;
+}
+.white {
+    color: white;
+}
+
+.title-text {
+    font-size: 36px;
+    font-weight: 700;
+}
+.regular-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+.small-text {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100vw;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    width: 100%;
+    height: 300px;
+    background: #3D72ED;
+    border-radius: 0 0 50px 50px;
+
+}
+.form-container {
+    background: white;
+    border-radius: 5px;
+    width: 400px;
+    padding: 16px;
+    margin-top: -80px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+}
+@media only screen and (max-width: 600px) {
+    .form-container {
+        width: 85%;
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #C5D5FA;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 16px;
+}
+
+input::placeholder {
+    font-family: Sen;
+    font-size: 18px;
+    font-weight: 700;
+    color: #D5D5D5;
+}
+
+input:focus {
+    outline: #3D72ED;
+    border: 2px solid #3D72ED;
+}
+
+button {
+    margin-top: 16px;
+    background: #3D72ED;
+    color: white;
+    font-family: Sen;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #5282f3;
+    cursor: pointer;
+}
+
+button:focus {
+    background: #2e5fd1
+}
+
+.results-container {
+    margin-top: 48px;
+    background: white;
+    border-radius: 5px;
+    width: 400px;
+    padding: 16px;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.05);
+}
+
+.binary {
+    word-wrap: break-word;
+    background: #E0E0E0;
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+}
+.decimal {
+    margin-top: 16px;
+    word-wrap: break-word;
+    background: #E2EAFD;
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .results-container {
+        width: 85%;
+    }
+}
+
+.creator {
+    position: absolute;
+    bottom: 20px;
+}
