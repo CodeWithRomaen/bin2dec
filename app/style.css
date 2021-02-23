@@ -121,12 +121,19 @@ button:focus {
 }
 
 .results-container {
+    position: relative;
     margin-top: 48px;
     background: white;
     border-radius: 5px;
     width: 400px;
     padding: 16px;
     box-shadow: 0 40px 60px rgba(0,0,0,0.05);
+}
+.dot-grid {
+    position: absolute;
+    z-index: -1;
+    left: -120px;
+    bottom: -110px;
 }
 
 .binary {
@@ -154,4 +161,13 @@ button:focus {
 .creator {
     position: absolute;
     bottom: 20px;
+}
+.link:hover {
+    color: #2e5fd1;
+}
+@media only screen and (max-height: 700px) {
+    .creator {
+        position: static;
+        margin: 32px;
+    }
 }

@@ -15,7 +15,7 @@
             </div>
             <div class="form-container">
                 <form>
-                    <input type="text" placeholder="010010101">
+                    <input inputmode="numeric" pattern="[0-1]*" placeholder="010010101" oninvalid='this.setCustomValidity("Please use 0 and 1")' oninput="this.setCustomValidity('')" >
                     <button>convert</button>
                 </form>
             </div>
@@ -29,10 +29,11 @@
                     <p class="small-text blue">DECIMAL</p>
                     <p class="title-text blue">0</p>
                 </div>
+                <img class="dot-grid" src="./app/assets/dot-grid.svg" alt="">
             </div>
 
             <div class="creator">
-                <p class="regular-text black">made by <a href="https://noodlesjs.dev/" target="_blank" class="text-regular blue">noodles</a></p>
+                <p class="regular-text black">made by <a href="https://noodlesjs.dev/" target="_blank" class="text-regular blue link">noodles</a></p>
             </div>
         </div>
     </div>
