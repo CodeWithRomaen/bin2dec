@@ -14,20 +14,20 @@
                 <p class="title-text white" style="text-align: center; padding-top: 80px;">Binary to <br> Decimal Convertor</p>
             </div>
             <div class="form-container">
-                <form>
-                    <input inputmode="numeric" pattern="[0-1]*" placeholder="010010101" oninvalid='this.setCustomValidity("Please use 0 and 1")' oninput="this.setCustomValidity('')" >
-                    <button>convert</button>
+                <form action="" id="form">
+                    <input id="form-input" inputmode="numeric" pattern="[0-1]*" placeholder="010010101" oninvalid='this.setCustomValidity("Please use 0 or 1")' oninput="this.setCustomValidity('')" >
+                    <button id="convert-btn">convert</button>
                 </form>
             </div>
 
             <div class="results-container">
                 <div class="binary">
                     <p class="small-text black">BINARY</p>
-                    <p class="title-text black">0</p>
+                    <p class="title-text black binary-text">0</p>
                 </div>
                 <div class="decimal">
                     <p class="small-text blue">DECIMAL</p>
-                    <p class="title-text blue">0</p>
+                    <p class="title-text blue decimal-text">0</p>
                 </div>
                 <img class="dot-grid" src="./app/assets/dot-grid.svg" alt="">
             </div>
@@ -37,5 +37,6 @@
             </div>
         </div>
     </div>
+    <script src="./app/app.js"></script>
 </body>
 </html>
