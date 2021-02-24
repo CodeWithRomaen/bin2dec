@@ -7,6 +7,7 @@ btn.addEventListener('click', function(event){
     event.preventDefault();
 
     formInput.reportValidity() ? bin2dec(formInput.value) :null;
+    formInput.value = '';
     
 });
 
